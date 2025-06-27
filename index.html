@@ -1,15 +1,326 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MASG Sistemas - Segurança e Proteção Contra Incêndio</title>
     <meta name="description" content="MASG Sistemas - Soluções completas em segurança e proteção para empresas, indústrias e comércios. Especialistas em combate a incêndio, CFTV, segurança eletrônica e instalações técnicas.">
     <meta name="keywords" content="combate a incêndio, CFTV, manutenção preventiva, segurança eletrônica, instalação elétrica, sprinklers, alarmes, monitoramento">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-section">
+                    <img src="assets/images/fire_icon.png" alt="MASG Sistemas Logo" class="header-logo">
+                    <div class="logo-text">
+                        <h1>MASG Sistemas</h1>
+                        <p>Segurança e eficiência em cada instalação</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Quem Somos</a>
+                    <div class="dropdown">
+                        <a href="#detailed-services" class="nav-link dropbtn">Serviços <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="instalacoes-eletricas.html">Instalações Elétricas</a>
+                            <a href="sistema-seguranca.html">Segurança Eletrônica</a>
+                            <a href="combate-incendio.html">Combate a Incêndio</a>
+                        </div>
+                    </div>
+                    <a href="#clientes" class="nav-link">Clientes</a>
+                    <a href="#orcamento" class="nav-link">Orçamento</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#inicio" class="nav-link-mobile">Início</a>
+                <a href="#sobre" class="nav-link-mobile">Quem Somos</a>
+                <div class="dropdown">
+                    <a href="#detailed-services" class="nav-link-mobile dropbtn">Serviços <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="instalacoes-eletricas.html">Instalações Elétricas</a>
+                        <a href="sistema-seguranca.html">Segurança Eletrônica</a>
+                        <a href="combate-incendio.html">Combate a Incêndio</a>
+                    </div>
+                </div>
+                <a href="#clientes" class="nav-link-mobile">Clientes</a>
+                <a href="#orcamento" class="nav-link-mobile">Orçamento</a>
+                <a href="#contato" class="nav-link-mobile">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Soluções completas em segurança e proteção</h2>
+                <p class="hero-subtitle">Para empresas, indústrias e comércios</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Contato Rápido
+                    </a>
+                    <a href="#orcamento" class="btn btn-secondary">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Quem Somos</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    A MASG Sistemas é especializada em instalações elétricas, segurança eletrônica (CFTV, alarmes), 
+                    cabeamento estruturado e sistemas de combate a incêndio. Atuamos com equipes técnicas experientes 
+                    e soluções personalizadas, conforme normas nacionais e internacionais (NBR, NFPA, FM, CBMESP).
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <h3>Certificações</h3>
+                        <p>NBR, NFPA, FM, CBMESP</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Equipe Experiente</h3>
+                        <p>Técnicos especializados</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Soluções Personalizadas</h3>
+                        <p>Atendimento sob medida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Serviço Personalizado</h3>
+                    <p>Atendimento adaptado a cada situação, desde problemas simples até sistemas complexos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Disponibilidade</h3>
+                    <p>Atendimento em qualquer horário, inclusive à noite e fins de semana, conforme a necessidade do cliente.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Soluções Personalizadas</h3>
+                    <p>Cada serviço é customizado para o local de trabalho e necessidade específica.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Normas</h3>
+                    <p>Conformidade com normas técnicas do Corpo de Bombeiros (CBMSP) e normas nacionais (NBR) e internacionais (NFPA, FM, EN).</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Manutenções Preventivas</h3>
+                    <p>Realização de manutenções preventivas e corretivas para garantir eficácia e evitar falhas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Economia de Escala</h3>
+                    <p>Testes e funcionamento contínuo dos sistemas promovem economia, eficiência, capacitação e redução de riscos.</p>
+                </div>
+            </div>
+            
+            <!-- Serviços Detalhados -->
+            <div class="detailed-services" id="detailed-services">
+                <h3 class="detailed-services-title">Conheça Nossos Serviços em Detalhes</h3>
+                <div class="detailed-services-grid">
+                    <a href="instalacoes-eletricas.html" class="detailed-service-card">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Instalações Elétricas</h4>
+                        <p>Baixa tensão para aplicações comerciais, industriais e residenciais</p>
+                        <span class="service-link">Ver detalhes <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="sistema-seguranca.html" class="detailed-service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Sistema de Segurança</h4>
+                        <p>CFTV, alarmes de intrusão, sensores e monitoramento via app</p>
+                        <span class="service-link">Ver detalhes <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="combate-incendio.html" class="detailed-service-card">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <h4>Combate a Incêndio</h4>
+                        <p>Sprinklers, hidrantes, alarmes, FM-200, CO2</p>
+                        <span class="service-link">Ver detalhes <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes Atendidos -->
+    <section id="clientes" class="clients">
+        <div class="container">
+            <h2 class="section-title">Clientes Atendidos</h2>
+            <p class="clients-subtitle">Clientes que confiam na nossa proteção</p>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Ambev</h3>
+                    <p>Sistemas de segurança industrial</p>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Hospital São Lucas</h3>
+                    <p>Proteção contra incêndio</p>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Rede Atacadista</h3>
+                    <p>CFTV e monitoramento</p>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Indústria Metalúrgica Alfa</h3>
+                    <p>Instalações elétricas e SPDA</p>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Rede Hoteleira Palace</h3>
+                    <p>Sistemas de alarme e detecção</p>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-school"></i>
+                    <h3>Colégio Modelo</h3>
+                    <p>CFTV e controle de acesso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes Atendidos -->-->
+    <section id="orcamento" class="quote">
+        <div class="container">
+            <h2 class="section-title">Solicite um Orçamento</h2>
+            <div class="quote-form-wrapper">
+                <form class="quote-form" id="quoteForm">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="servico">Tipo de Serviço</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione o serviço desejado</option>
+                            <option value="instalacoes-eletricas">Instalações Elétricas</option>
+                            <option value="seguranca-eletronica">Segurança Eletrônica</option>
+                            <option value="combate-incendio">Combate a Incêndio</option>
+                            <option value="manutencao">Manutenção</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="descricao">Descrição da Necessidade</label>
+                        <textarea id="descricao" name="descricao" rows="4" required placeholder="Descreva detalhadamente sua necessidade..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Gerar Relatório de Orçamento
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fale Conosco -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Fale Conosco</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Marco Antonio S. Galiassi</h3>
+                    <p class="contact-role">Técnico Comercial (Fire)</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 98109-3277</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>marco@masg.com.br</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Rodrigo R. de Lima</h3>
+                    <p class="contact-role">Técnico Comercial (CFTV/Intrusão)</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 94856-8061</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rodrigo@masg.com.br</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MASG Sistemas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511981093277" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
